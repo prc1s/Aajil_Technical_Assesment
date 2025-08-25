@@ -1,0 +1,15 @@
+pandas
+mlflow
+matplotlib
+numpy
+notebook 
+scikit-learn
+python-box
+pyYAML
+tqdm
+ensure
+joblib
+types-pyYAML
+python-dotenv
+openpyxl
+sentence-transformers

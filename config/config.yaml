@@ -1,0 +1,40 @@
+
+artifacts_root: artifacts
+
+data_ingestion:
+  save_csv:
+    root_dir: artifacts/data_ingestion
+    source_file: data/purchase-order-items.xlsx
+    csv_name: purchase-order-items.csv
+
+data_preprocessing:
+  root_dir: artifacts/preprocessed_data
+  source_file: artifacts/data_ingestion/purchase-order-items.csv
+  csv_name: purchase-order-items.csv
+  
+  drop_columns:
+    column_names: ['Purchase Order ID', 'Product ID', 'Account ID', 'Tax ID', 'Project ID', 'Item ID', 'Sub Total Bcy']
+
+
+data_categorisation:
+  root_dir: artifacts/categorisation
+  source: artifacts/preprocessed_data/purchase-order-items.csv
+  seeds: data/seeds.json
+
+  model:
+    model_name: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+    batch_size: 64
+    normalise: True
+
+  params:
+    use_pca: True
+    pca_n: 50
+    k_grid: None
+    conf_threshold: 0.5
+    random_state: 42
+    tau: 0.25
+
+  mlflow:
+    experiment: ItemNameClustering
+    run_name: seed-centroids
+

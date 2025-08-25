@@ -1,0 +1,40 @@
+{
+  "Rebar & Steel": [
+    "rebar", "steel bar", "steel bars", "rabar", "rebars",
+    "حديد تسليح", "قضبان حديد", "حديد", "ipe", "heb", "angel", "angle",
+    "tube", "beam", "ipea", "rail", "hdg"
+  ],
+  "Cement & Concrete": [
+    "cement", "cements", "اسمنت", "سمنت",
+    "concrete", "خرسانة", "خرسانه", "ready mix", "screed", "blending", "structural concrete"
+  ],
+  "Sheets & Plates": [
+    "sheet", "b.sheet", "gi sheet", "corrugated sheet", "hr sheet", 
+    "صاج", "مسطح", "plate", "mesh", "wire mesh"
+  ],
+  "Pipes & Fittings": [
+    "pipe", "pipes", "ماسورة", "مواسير", "pvc", 
+    "fitting", "fittings", "وصلات", "ماسورة حديد"
+  ],
+  "Fasteners & Anchors": [
+    "bolt", "bolts", "anchor", "expansion bolt", "rail clamp", 
+    "مسمار", "برغي", "صامولة"
+  ],
+  "Paints & Coatings": [
+    "paint", "paints", "دهان", "دهانات", "coating", "coatings"
+  ],
+  "Electrical & Cables": [
+    "cable", "cables", "سلك", "wire", "wires", "gi wire", "power cable"
+  ],
+  "PPE & Safety": [
+    "helmet", "helmets", "gloves", "خوذة", "قفازات", "ppe", 
+    "safety helmet", "safety gloves"
+  ],
+  "Hardware & Tools": [
+    "drill", "grinder", "tools", "معدات", "عدة", 
+    "hinges", "مفصلات", "كفرات", "مسكة", "شريط حمايه"
+  ],
+  "Other": [
+    "unknown", "غير معروف"
+  ]
+}
